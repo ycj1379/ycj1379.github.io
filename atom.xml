@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://ycj1379.github.io</id>
+    <id>https://www.oxetone.com</id>
     <title>Gridea</title>
-    <updated>2021-01-27T01:55:29.457Z</updated>
+    <updated>2021-01-27T02:05:26.945Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://ycj1379.github.io"/>
-    <link rel="self" href="https://ycj1379.github.io/atom.xml"/>
+    <link rel="alternate" href="https://www.oxetone.com"/>
+    <link rel="self" href="https://www.oxetone.com/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>https://ycj1379.github.io/images/avatar.png</logo>
-    <icon>https://ycj1379.github.io/favicon.ico</icon>
+    <logo>https://www.oxetone.com/images/avatar.png</logo>
+    <icon>https://www.oxetone.com/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://ycj1379.github.io/post/hello-gridea/</id>
-        <link href="https://ycj1379.github.io/post/hello-gridea/">
+        <id>https://www.oxetone.com/post/hello-gridea/</id>
+        <link href="https://www.oxetone.com/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
