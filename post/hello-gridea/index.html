@@ -1,17 +1,342 @@
-
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>页面跳转 Page forwarding</title>
-    <meta http-equiv="Cache-Control: no-cache, no-store, must-revalidate">
-    <meta http-equiv="refresh" content="0;url=https://www.oxetone.com" />
-    <style>body, html{background:#303030;color:#fff;}a{text-decoration: none;color:#2196f3;transition: all .25s;}</style>
+    <meta charset="utf-8" />
+<meta name="description" content=" " />
+<meta name="keywords" content=" ">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    Hello Gridea | Gridea
+</title>
+
+
+
+    <!-- 没开启静态资源加速 -->
+<link rel="shortcut icon" href="https://www.oxetone.com/favicon.ico?v=1611733816723">
+<link rel="stylesheet" href="https://www.oxetone.com/styles/main.css">
+<link rel="stylesheet" href="https://www.oxetone.com/media/css/prism.css">
+<link rel="stylesheet" href="https://www.oxetone.com/media/css/font-awesome.min.css">
+<script type='text/javascript' src='https://www.oxetone.com/media/js/jquery.min.js'></script>
+<script type='text/javascript' src='https://www.oxetone.com/media/js/plugins.js'></script>
+<script type='text/javascript' src='https://www.oxetone.com/media/js/script.js'></script>
+<script type='text/javascript' src='https://www.oxetone.com/media/js/aos.js'></script>
+<script type='text/javascript' src='https://www.oxetone.com/media/js/prism.js'></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/autocjs@1.3.0/dist/autoc.min.css">
+<script type="text/javascript" src="https://unpkg.com/autocjs@1.3.0/dist/autoc.min.js"></script>
+
+
+
+
+
+
+
+        
+                <!-- 没开启静态资源加速 -->
+                <script>
+                    $(document).ready(function() {
+                        /**
+                         * 给文章的图片添加放大效果
+                         */
+                        var link;
+                        $(".post_content img").each(function() {
+                            link = $(this).attr("src");
+                            $(this).wrap("<a href=\"" + link + "\"rel =\"gallery\"></a>")
+                        })
+                    })
+                </script>
+                
 </head>
-<body>
 
-<p>你不该来到这，现在 <a href="https://www.oxetone.com">请点此处</a> 回到正轨。<br>This is weird, <a href="https://www.oxetone.com">click here</a> Back to home-page.</p>
+<body class="home blog custom-background round-avatars">
+    <!-- <body class="home blog custom-background round-avatars" itemscope="" itemtype="http://schema.org/Organization" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0"></body> -->
+    
+        
+            <div class="Yarn_Background" style="background-image: url( https://www.oxetone.com/media/images/bg.jpg);"></div>
+        
+     
+    <!-- 搜索开始 -->
 
+<div class="js-search search-form search-form--modal">
+    <div class="search-form__inner">
+        <div>
+            <div id="search-container" class="ajax_search">
+                <form method="get" id="gridea-search-form" action="https://www.oxetone.com/search/">
+                    <div class="filter_container">
+                        <input type="text" value="" autocomplete="off" placeholder="请输入要搜索的内容" name="q" id="search-input" />
+                        <ul id="search_filtered" class="search_filtered"></ul>
+                    </div>
+                    <!-- <input type="submit" name="submit" id="searchsubmit" class="searchsubmit" value="" /> -->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 搜索结束 -->
+<div class="navi" data-aos="fade-down">
+    <div class="bt-nav">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+    </div>
+    <div class="navbar animated fadeInRight">
+        <div class="inner">
+            <nav id="site-navigation" class="main-navigation">
+                <div id="main-menu" class="main-menu-container">
+                    <div class="menu-menu-container">
+                        <ul id="primary-menu" class="menu">
+                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/">
+                                                首页
+                                            </a>
+                                        </li>
+                                        
+                                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/archives">
+                                                归档
+                                            </a>
+                                        </li>
+                                        
+                                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/tags">
+                                                标签
+                                            </a>
+                                        </li>
+                                        
+                                            
+                                
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="/post/about">
+                                                关于
+                                            </a>
+                                        </li>
+                                        
+                                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- #site-navigation -->
+        </div>
+    </div>
+</div>
+<div class="hebin" data-aos="fade-down">
+    <i class=" js-toggle-search fa fa-search"></i>
+</div>
+<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
+    <div class="site-branding text-center">
+        <a href="">
+            <figure>
+                
+                    <img class="custom-logo avatar" src="https://www.oxetone.com/images/avatar.png?v=1611733816723" />
+                    
+            </figure>
+        </a>
+        <h3 class="blog-description"><p>温故而知新</p></h3>
+    </div>
+    <!-- .site-branding -->
+    <div class="decor-part">
+        <div id="particles-js"></div>
+    </div>
+    <div class="animation-header">
+        <div class="decor-wrapper">
+            <svg id="header-decor" class="decor bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+                <path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+                <path class="medium left" d="M0 100 L50 50 L0 33.3" fill="rgba(255,255,255, .3)"></path>
+                <path class="medium right" d="M100 100 L50 50 L100 33.3" fill="rgba(255,255,255, .3)"></path>
+                <path class="small left" d="M0 100 L50 50 L0 66.6" fill="rgba(255,255,255, .5)"></path>
+                <path class="small right" d="M100 100 L50 50 L100 66.6" fill="rgba(255,255,255, .5)"></path>
+                <path d="M0 99.9 L50 49.9 L100 99.9 L0 99.9" fill="rgba(255,255,255, 1)"></path>
+                <path d="M48 52 L50 49 L52 52 L48 52" fill="rgba(255,255,255, 1)"></path>
+            </svg>
+        </div>
+    </div>
+</header>
+
+        <!-- 图片放大开始 -->
+
+        <!-- 图片放大结束 -->
+        <div id="main" class="content">
+            <!-- 测试开始 -->
+
+            <!-- 测试结束 -->
+            <!-- 文章开始 -->
+            <div class="container">
+                <article class="js-gallery post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+                    <style>
+                        .container {
+                            padding: 10px 0px;
+                        }
+                        
+                        .post {
+                            margin: 0 auto
+                        }
+                    </style>
+
+                    <section class="post_content">
+                        <header class="post_header">
+                            <h1 class="post_title yellow-under">
+                                Hello Gridea
+                            </h1>
+                        </header>
+                        <div class="post-body js-gallery">
+                            <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="http://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+
+
+                        </div>
+                        <!-- Tips开始 -->
+                        
+                                <!-- Tips结束 -->
+                                <!-- 文章底部信息开始 -->
+                                <div class="meta split split--responsive cf">
+                                    <div class="split__title">
+                                        <time>2018-12-12</time>
+                                        
+                                                    
+                                                        <a href="https://www.oxetone.com/tag/EG6VVtrYH/" class="autotag">
+                #Gridea
+              </a>
+                                                        
+                                    </div>
+                                    <div id="social-share"><span class="entypo-share"><i class="fa fa-share-square-o"></i>分享</span></div>
+                                    <div class="slide">
+                                        <a class="btn-slide" title="switch down"><i class="fa fa-chevron-down"></i>折叠评论区</a>
+                                    </div>
+                                </div>
+                                <!-- 文章底部信息结束 -->
+                    </section>
+                </article>
+            </div>
+            <!-- 分享开始 -->
+            <svg id="upTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+      <path d="M0 0 L50 100 L100 0 Z"></path>
+    </svg>
+            <div id="social">
+                <ul>
+                    <li>
+                        <a id="qzoneShare" href="javascript:void(0)" target="_blank"><i class="fa fa-tencent-weibo fa-lg"></i></a>
+                    </li>
+                    <li>
+                        <a id="weiboShare" href="javascript:void(0)" title="weibo" target="_blank"><i
+              class="fa fa-weibo fa-lg"></i></a>
+                    </li>
+                    <li>
+                        <a id="qqShare" href="javascript:void(0)" target="_blank"><i class="fa fa-qq fa-lg"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 分享结束 -->
+            <!-- 文章结束 -->
+
+            <!-- 上下一篇文章开始 -->
+            <!-- 如果有图片展示文章封面，如果没有图片展示默认图片 -->
+            <div class="navpost-part">
+                <div id="NextPrevPosts" style="display: block;">
+                    
+                            
+            </div>
+            <!-- 上下一篇文章结束 -->
+            <!-- 评论区开始 -->
+            <div id="panel" style="display: block;">
+    <div class="comment-area">
+      <section class="comments">
+        <div class="comments-main">
+          
+        </div>
+      </section>
+    </div>
+  </div>
+                <!-- 评论区结束 -->
+        </div>
+        
+
+  
+
+
+<script type='text/javascript' src='https://www.oxetone.com/media/js/particles.js'></script>
+
+
+<footer id="footer" class="overlay animated from-top">
+    <div class="decor-wrapper">
+        <svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <path class="large left" d="M0 0 L50 50 L0 100" fill="rgba(255,255,255, .1)"></path>
+            <path class="large right" d="M100 0 L50 50 L100 100" fill="rgba(255,255,255, .1)"></path>
+            <path class="medium left" d="M0 0 L50 50 L0 66.6" fill="rgba(255,255,255, .3)"></path>
+            <path class="medium right" d="M100 0 L50 50 L100 66.6" fill="rgba(255,255,255, .3)"></path>
+            <path class="small left" d="M0 0 L50 50 L0 33.3" fill="rgba(255,255,255, .5)"></path>
+            <path class="small right" d="M100 0 L50 50 L100 33.3" fill="rgba(255,255,255, .5)"></path>
+            <path d="M0 0 L50 50 L100 0 L0 0" fill="rgba(255,255,255, 1)"></path>
+            <path d="M48 48 L50 51 L52 48 L48 48" fill="rgba(255,255,255, 1)"></path>
+        </svg>
+    </div>
+    <div class="socialize" data-aos="zoom-in">
+        
+        
+        
+        
+        
+        
+
+    </div>
+    <div class="cr">
+        Copyright&copy;
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> |
+        <a class="rss" href="https://www.oxetone.com/atom.xml" target="_blank">RSS</a>
+    </div>
+</footer>
+            <script>
+    /* 分享代码 */
+    var feature = "https://www.oxetone.com/post-images/hello-gridea.png";
+    if(feature == ""){
+      feature = "https://www.oxetone.com/favicon.ico";
+    }
+      $("#weiboShare").click(function(){
+        var url = "http://v.t.sina.com.cn/share/share.php?title=" + document.title + "&url=" + document.url + "&pic=" + feature;
+        window.open(url);
+      })
+      $("#qqShare").click(function () {
+        var url = "http://connect.qq.com/widget/shareqq/index.html?url="+ document.url + "&sharesource=qzone&title="+ document.title +"&pics="+feature;
+        window.open(url);
+        })
+        $("#qzoneShare").click(function () {
+          var url = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=" + document.url + "&sharesource=qzone&title="+ document.title +"&pics="+feature;
+          window.open(url);
+      })
+  </script>
+
+                <!-- 测试代码开始 -->
+
+                <!-- 测试代码结束 -->
 </body>
+
 </html>

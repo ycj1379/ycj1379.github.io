@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -6,7 +7,7 @@
 <meta name="keywords" content=" ">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    标签 | Gridea
+    Gridea
 </title>
 
 
@@ -31,11 +32,13 @@
 
 
 
-    <!-- 防止浏览器缓存 -->
-<meta http-equiv="pragma" content="no-cache"> 
-<meta http-equiv="Cache-Control" content="no-cache, must-revalidate"> 
-<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+    <script src="https://www.oxetone.com/media/gridea-search/fuse.basic.min.js"></script>
+    <script src="https://www.oxetone.com/media/gridea-search/ejs.min.js"></script>
+    <script src="https://www.oxetone.com/media/gridea-search/gridea-search.js"></script>
+    <script src="https://www.oxetone.com/media/gridea-search/result-template.ejs" type="text/ejs"></script>
 </head>
+
+
 
 <body class="home blog custom-background round-avatars">
     
@@ -147,18 +150,20 @@
         </div>
     </div>
 </header>
- 
-    <div id="main" class="content">
-        <div class="container text-center">
-            
-          
-            <a class="tag-yellow" href="https://www.oxetone.com/tag/EG6VVtrYH/">
-                Gridea
-            </a>
-            
 
+    <div id="main" class="content">
+        <div class="container">
+            <article itemscope="itemscope">
+                <div class="main animated">
+                    <div id="gridea-search-result" data-update="1611733816723">
+                        <div class="searching">搜索中......</div>
+                        <div class="no-result" style="display:none;text-align: center;">未搜索到相关文章</div>
+                    </div>
+                </div>
+            </article>
         </div>
     </div>
+    
     
 
   
@@ -195,8 +200,9 @@
         Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> |
         <a class="rss" href="https://www.oxetone.com/atom.xml" target="_blank">RSS</a>
     </div>
-</footer> 
+</footer>
 
 </body>
+
 
 </html>
