@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		.form {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 100px;
+		}
+
+		.sumbit-yiche {
+			width: 140px;
+			display: inline-block;
+			line-height: 1;
+			white-space: nowrap;
+			cursor: pointer;
+			background: #fff;
+			border: 1px solid #dcdfe6;
+			color: #606266;
+			-webkit-appearance: none;
+			text-align: center;
+			box-sizing: border-box;
+			outline: none;
+			margin: 0;
+			transition: .1s;
+			font-weight: 500;
+			padding: 12px 20px;
+			font-size: 14px;
+			border-radius: 4px;
+			color: #fff;
+			background-color: #409eff;
+			border-color: #409eff;
+		}
+		.sumbit-tixing {
+			width: 200px;
+			display: inline-block;
+			line-height: 1;
+			white-space: nowrap;
+			cursor: pointer;
+			background: #fff;
+			border: 1px solid #dcdfe6;
+			color: #606266;
+			-webkit-appearance: none;
+			text-align: center;
+			box-sizing: border-box;
+			outline: none;
+			margin: 0;
+			transition: .1s;
+			font-weight: 500;
+			padding: 12px 20px;
+			font-size: 14px;
+			border-radius: 4px;
+			color: #fff;
+			background-color: #409eff;
+			border-color: #409eff;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="form-wrapper">
+		<div class="form">
+			<button class="sumbit-yiche" id="yiche">提醒车主移车</button>
+		</div>
+	</div>
+	<div class="form-wrapper">
+		<div class="form">
+			<button class="sumbit-tixing" id="tixing">其他问题需要车主处理</button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var requestUrl = 'https://www.odemon.org/bark//xny56qhxyyLqVwYa3GMbae'
+	var yiche = document.getElementById('yiche');
+	yiche.addEventListener('click', function() {
+		return ajax('GET', requestUrl)
+	})
+	function ajax(method, url) {
+		var xhr = null;
+		if (window.XMLHttpRequest) {
+			xhr = new XMLHttpRequest();
+		} else {
+			xhr = new ActiveXObject('Microsoft.XMLHTTP')
+		}
+		xhr.onreadstatechange = function () {
+			if (xhr.status === 200 && xhr.readyState === 4) {
+			}
+		}
+		xhr.open(method, url + '/车辆提醒/要移车啦！！！'+'?sound=sherwoodforest&group=车辆提醒' )
+		xhr.send()
+		alert('正在火速赶来！抱歉给您惹麻烦了，请稍等片刻')
+	}
+
+	var tixing = document.getElementById('tixing');
+	tixing.addEventListener('click', function() {
+		return ajax('GET', requestUrl)
+	})
+	function ajax(method, url) {
+		var xhr = null;
+		if (window.XMLHttpRequest) {
+			xhr = new XMLHttpRequest();
+		} else {
+			xhr = new ActiveXObject('Microsoft.XMLHTTP')
+		}
+		xhr.onreadstatechange = function () {
+			if (xhr.status === 200 && xhr.readyState === 4) {
+			}
+		}
+		xhr.open(method, url + '/车辆提醒/小马有问题需要处理啦！！！'+'?sound=sherwoodforest&group=车辆提醒' )
+		xhr.send()
+		alert('正在火速赶来！谢谢提醒，抱歉给您惹麻烦了，请稍等片刻')
+	}
+</script>
+</html>
